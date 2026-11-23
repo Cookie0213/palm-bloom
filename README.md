@@ -5,7 +5,7 @@
 
 从渠县黄花、江油辛夷、中江荷花、犍为茉莉到攀枝花木棉，以双手为媒介，轻挥切换主题，指尖开合控制绽放。项目由黄诗芮策划并借助 AI 辅助开发，使用 MediaPipe 实现浏览器端手部关键点识别，探索“指尖互动—文化认知—产品推介—消费连接”的数字助农路径。
 
-[在线体验](https://daylily-in-your-hands.divineeel19.chatgpt.site) · [零基础发布指南](docs/GITHUB_GUIDE.md) · [素材说明](ASSETS.md) · [第三方声明](THIRD_PARTY_NOTICES.md)
+[开源仓库](https://github.com/Cookie0213/palm-bloom) · [版本下载](https://github.com/Cookie0213/palm-bloom/releases) · [在线体验](https://daylily-in-your-hands.divineeel19.chatgpt.site) · [零基础发布指南](docs/GITHUB_GUIDE.md) · [素材说明](ASSETS.md) · [第三方声明](THIRD_PARTY_NOTICES.md)
 
 本次源码快照基于 2026-11-23 的 **Build 48**。对外版本为 **3.0.0**；Build 48 是内部构建编号，两者含义不同。本包没有旧站点的 Git 历史，也没有旧新闻照片、原始家庭照片、托管凭据或站点内部配置。
 
@@ -71,7 +71,7 @@ npm run check
 
 ## 部署到自己的静态服务器
 
-将 `dist/` 的全部内容作为站点根目录上传，启用 HTTPS。GitHub Pages 的可选手动工作流已提供：在仓库 Settings → Pages 选择 GitHub Actions，再运行 Actions 中的 **Deploy static site to GitHub Pages**。默认不会因为上传源码就自动替你开通 Pages。
+将 `dist/` 的全部内容作为站点根目录上传，启用 HTTPS。本仓库已公开源码，但没有开通 GitHub Pages，也没有启用部署工作流。开源代码与发布在线网站是两件事；可以继续使用上面的原有在线体验地址，或按本地运行说明启动网站。
 
 本项目使用相对资源路径，可部署在 GitHub Pages 的仓库子路径下。服务器需要正确返回 `.mjs`、`.wasm`、`.webp`、`.bin` 和 `.task` 文件；不要把资源请求重写成 HTML。
 

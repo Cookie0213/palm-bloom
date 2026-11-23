@@ -1,5 +1,7 @@
 # 掌间花开：零基础 GitHub 开源发布指南
 
+> 当前公开仓库：https://github.com/Cookie0213/palm-bloom 。以下从零发布步骤供复用学习；已有此仓库时，请克隆现有仓库，不必重新创建。GitHub Pages 未开通。
+
 本指南配套 V3.0.0 源码包（基于 Build 48）。你已选择 **MIT 代码许可证**；文件已经写好，不要在 GitHub 再生成一套不同的 README 或许可证。
 
 ## 第 1 步：注册免费的个人账号
@@ -68,10 +70,7 @@
 
 ## 第 8 步（可选）：发布 GitHub Pages 网站
 
-1. 仓库 Settings → Pages → Build and deployment，Source 选择 **GitHub Actions**。
-2. Actions → **Deploy static site to GitHub Pages** → Run workflow。
-3. 等待通过，使用流程或 Settings → Pages 显示的真实网址。不要提前猜测或宣称网址已开通。
-4. 打开主页，检查五花联动、单页切换、相机权限和菜谱图片。
+本次只完成源码开源，不开通 GitHub Pages。若以后需要新的在线网址，再单独配置托管服务；当前仓库没有可直接运行的 Pages 部署工作流。可以继续使用 README 中的原有在线体验地址。
 
 GitHub Pages 和 GitHub 在中国大陆的访问体验因网络而异，并不保证所有电脑都能稳定访问。要给无 VPN 的电脑演示，可以另外发送完整离线包，通过 localhost 运行；开源不等于必须更换当前在线站。
 
