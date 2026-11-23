@@ -1,0 +1,51 @@
+name: Import verified v3 source snapshot
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/import-source.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  import:
+    if: github.repository == 'Cookie0213/palm-bloom'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Download the prepared release archive
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          test ! -e package.json
+          gh release download v3.0.0 --pattern 'PalmBloom-v3.0.0-Build48-OpenSource.zip' --dir "$RUNNER_TEMP/palmbloom"
+          echo 'fb99adba3275efffea62e51b55e715abc469c12cb3f6ec06f1bd3bdf7cc4d1f5  '"$RUNNER_TEMP/palmbloom/PalmBloom-v3.0.0-Build48-OpenSource.zip" | sha256sum --check
+      - name: Extract the verified source without modifying workflows
+        run: |
+          python3 - <<'PY'
+          import os, pathlib, zipfile
+          root = pathlib.Path.cwd()
+          archive = pathlib.Path(os.environ['RUNNER_TEMP'])/'palmbloom/PalmBloom-v3.0.0-Build48-OpenSource.zip'
+          with zipfile.ZipFile(archive) as z:
+              for info in z.infolist():
+                  p = pathlib.PurePosixPath(info.filename)
+                  assert p.parts[0] == 'palm-bloom' and '..' not in p.parts and not p.is_absolute()
+                  rel = pathlib.PurePosixPath(*p.parts[1:])
+                  if not rel.parts or info.is_dir() or rel.parts[0] in ('.github', '.git'):
+                      continue
+                  target = root / rel
+                  target.parent.mkdir(parents=True, exist_ok=True)
+                  target.write_bytes(z.read(info))
+          PY
+      - run: npm test
+      - run: npm run check
+      - name: Commit the source snapshot
+        run: |
+          git config user.name 'Cookie0213'
+          git config user.email '360288279+Cookie0213@users.noreply.github.com'
+          git add .
+          git commit -m "Publish Palm Bloom v3.0.0 source and licensed demo assets"
+          git push origin HEAD:main
