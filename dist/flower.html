@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f3eb">
+  <meta name="description" content="用手势看见花开，认识渠县黄花、江油辛夷、中江荷花、犍为茉莉与攀枝花木棉的产地故事，探索四川特色农产品与真实助农渠道。">
+  <title>掌间花开——一场指尖与黄花的相遇</title>
+  <link rel="stylesheet" href="style.css?v=35">
+</head>
+<body>
+  <header id="home" class="site-header shell">
+    <a class="brand" href="./"><span class="brand-mark" aria-hidden="true">✳</span><span>掌间花开</span></a>
+    <nav aria-label="展览导航">
+      <a href="./" aria-label="HOME 返回主页">HOME</a>
+      <a href="#origins" aria-label="CULTURE 产地故事">CULTURE</a>
+      <a href="#kitchen" aria-label="TASTE 花食菜谱">TASTE</a>
+      <a href="#market" aria-label="MARKET 产地好物">MARKET</a>
+      <details id="moreMenu" class="more-menu"><summary>MORE <span class="down-triangle" aria-hidden="true"></span></summary><div class="more-options" aria-label="花卉与页面目录"><button class="theme-tab" aria-label="01 渠县黄花" data-theme="0" aria-pressed="true">01 渠县黄花</button><button class="theme-tab" aria-label="02 江油辛夷" data-theme="1" aria-pressed="false">02 江油辛夷</button><button class="theme-tab" aria-label="03 中江荷花" data-theme="2" aria-pressed="false">03 中江荷花</button><button class="theme-tab" aria-label="04 犍为茉莉" data-theme="3" aria-pressed="false">04 犍为茉莉</button><button class="theme-tab" aria-label="05 攀枝花木棉" data-theme="4" aria-pressed="false">05 攀枝花木棉</button><div class="more-sections"><a href="#home">指尖互动</a><a href="#flower-profile">花卉档案</a><a href="#culture">从田间到指尖</a><a href="#about">关于掌间花开</a></div></div></details>
+    </nav>
+    <span class="location">四川 · 达州 · 渠县</span>
+  </header>
+
+  <main class="shell">
+    <button id="prevFlower" class="edge-arrow edge-left" aria-label="上一主题" title="上一主题"><span aria-hidden="true"></span></button>
+    <button id="nextFlower" class="edge-arrow edge-right" aria-label="下一主题" title="下一主题"><span aria-hidden="true"></span></button>
+    <section class="gallery" aria-label="渠县黄花互动展品">
+      <div class="introduction">
+        <p class="eyebrow">渠县黄花 <span class="rule"></span> 数字艺术展</p>
+        <h1 aria-label="In Full Bloom"><span>In Full</span><em>Bloom.</em></h1>
+        <p class="subtitle">一场指尖与黄花的相遇</p>
+        <p class="intro-copy">一朵黄花，一方水土，<br>一场关于生命的绽放。</p>
+        <button id="cameraBtn" class="primary"><span id="cameraBtnLabel">开启手势体验</span><span id="cameraBtnIcon" aria-hidden="true">↗</span></button>
+        <p class="privacy">摄像头画面仅在本机处理</p>
+      </div>
+
+      <figure class="exhibit">
+        <div class="stage">
+          <picture id="poster">
+            <source media="(max-width: 650px)" srcset="assets/display-v21/daylily/small/poster.webp">
+            <img src="assets/display-v21/daylily/hd/poster.webp" alt="暖白背景下自然舒展的金黄色黄花">
+          </picture>
+          <canvas id="flower" role="img" aria-label="随手势或滑块开合的渠县黄花"></canvas>
+          <div class="stage-top">
+            <span class="mode"><i id="statusDot"></i><span id="mode">手动体验</span></span>
+            <button id="demoBtn" class="pill" disabled>▷ 自动演示</button>
+          </div>
+          <div id="loading" class="loading"><span>正在载入花朵画面</span><progress id="loadBar" aria-label="画面加载进度"></progress></div>
+          <div id="cameraCard" class="camera-card" hidden>
+            <div class="camera-image"><video id="camera" autoplay muted playsinline aria-label="本机摄像头预览"></video><canvas id="handOverlay" aria-hidden="true" hidden></canvas></div>
+            <span id="trackingLabel">请将手放入画面</span>
+          </div>
+        </div>
+        <figcaption><span>HEMEROCALLIS · QUXIAN</span><a href="assets/original.mp4?v=6" target="_blank" rel="noopener">观看绽放视频 <span aria-hidden="true">↗</span></a></figcaption>
+      </figure>
+
+      <aside id="flower-profile" class="specimen" aria-labelledby="flowerTitle">
+        <span class="specimen-number">01</span>
+        <h2 id="flowerTitle">渠县黄花</h2>
+        <p class="specimen-en">QUXIAN YELLOW DAYLILY</p>
+        <div id="profileBadges" class="profile-badges" aria-label="产地特色与文化身份"><a id="profileBadge" class="profile-badge" href="#origins">国家地理标志保护产品</a><a class="profile-badge" href="#origins">四川省级非遗 · 传统技艺</a></div>
+        <dl>
+          <div><dt>产地</dt><dd>中国四川 · 达州渠县</dd></div>
+          <div><dt>性状</dt><dd>多年生草本，花蕾粗长饱满，盛开时花色金黄。</dd></div>
+          <div><dt>栽培</dt><dd>可分株繁殖，多在春秋栽植，花蕾开放前采收。</dd></div>
+          <div><dt>乡土寓意</dt><dd>也叫忘忧草、母亲花，寄托思念与祝愿。</dd></div>
+        </dl>
+      </aside>
+    </section>
+
+    <section class="interaction" aria-labelledby="interactionTitle">
+      <div class="interaction-heading">
+        <h2 id="interactionTitle">指尖互动</h2>
+        <p>右手拇指与食指控制开合；左手张掌，向左进入下一主题，向右返回上一主题。</p>
+        <button id="calibrateBtn" class="text-button" aria-expanded="false" aria-controls="calibration" disabled>校准手势 <span aria-hidden="true">↗</span></button>
+      </div>
+      <div class="instrument">
+        <dl class="readings">
+          <div><dt>手部识别</dt><dd id="handStatus">等待识别</dd></div>
+          <div><dt>双指距离 <span title="用指尖距离除以掌宽，减少手离摄像头远近的影响">/ 掌宽</span></dt><dd id="pinchValue">—</dd></div>
+          <div><dt>当前动作</dt><dd id="motionStatus">保持当前状态</dd></div>
+          <div><dt>摄像头</dt><dd id="cameraState">已关闭</dd></div>
+        </dl>
+        <div class="progress-control">
+          <div class="progress-header"><label for="progress">开放程度 <span id="stateName">盛开</span></label><output id="percent" for="progress">100%</output></div>
+          <input id="progress" aria-label="控制花朵开放程度" type="range" min="0" max="100" value="100" disabled>
+          <div class="range-labels"><span>0% 含苞</span><span>拖动滑块也能体验</span><span>100% 盛放</span></div>
+        </div>
+      </div>
+      <div class="gesture-options"><span id="swipeStatus" role="status">左手向左 → 江油辛夷 · 向右 → 攀枝花木棉</span><button id="quickClosed" class="text-button" type="button" title="右手拇指与食指合拢并保持，再点击记录" disabled>将当前合拢设为0%</button><button id="quickOpen" class="text-button" type="button" title="右手拇指与食指自然张开并保持，再点击记录" disabled>将当前张开设为100%</button><button id="roleCalibrate" class="text-button" type="button">校准左右手</button><button id="swapHands" class="text-button" type="button">交换左右手识别</button></div><div id="roleGuide" class="calibration" hidden><p>只将你的左手放入镜头，右手暂时移开，再点击下方按钮。系统会记住这只手用于切换页面。</p><button id="recordLeft" type="button">这只手是左手，记录</button><p id="roleStatus" role="status"></p></div><div class="message-row"><p id="message" role="status" aria-live="polite">画面准备完成后，即可开始体验。</p></div>
+      <div id="calibration" class="calibration" hidden>
+        <p>用右手的拇指与食指开合，掌心朝向镜头。点击记录后有两秒时间摆好手势，随后请短暂停留。</p>
+        <div><button id="setClosed">记录捏紧</button><button id="setOpen" disabled>记录最宽</button><button id="resetCalibration">恢复默认</button></div>
+        <p id="calibrationStatus" role="status">先将拇指与食指捏紧，再张开到舒适的最大幅度；也可直接使用“将当前张开设为100%”。</p>
+      </div>
+    </section>
+
+    <section id="origins" class="provenance" aria-labelledby="originTitle">
+      <div class="section-heading"><p class="eyebrow">ROOTED IN THE LAND</p><h2 id="originTitle">渠县一味 · 黄花传薪</h2></div>
+      <p id="originIntro" class="section-intro">从花田到竹筛，渠县黄花的采制手艺，留住家乡的金色滋味。</p>
+      <div id="originContent" class="origin-layout"></div>
+    </section>
+
+    <section id="culture" class="culture" aria-labelledby="cultureTitle">
+      <div class="section-heading"><p class="eyebrow">CULTURE</p><h2 id="cultureTitle">从田间到指尖</h2></div>
+      <div class="culture-grid">
+        <article>
+          <img src="assets/ai-scenes-v47/daylily-field.webp" width="1536" height="1024" alt="AI 生成示意：丘陵间的黄花田与远处农舍" loading="lazy" decoding="async" fetchpriority="low">
+          <h3>黄花之乡</h3>
+          <p>在四川达州渠县，清溪、望江等乡镇种植黄花。进入采收季，田间陆续收下还未绽放的金黄色花苞。</p>
+          <a href="https://sc.people.com.cn/n2/2024/0928/c379469-40993133.html" target="_blank" rel="noopener">渠县黄花产业报道 ↗</a>
+        </article>
+        <article>
+          <img src="assets/ai-scenes-v47/daylily-trays.webp" width="1536" height="1024" alt="AI 生成示意：农家院落中晾放鲜黄花蕾的竹筛" loading="lazy" decoding="async" fetchpriority="low">
+          <h3>忘忧文化</h3>
+          <p>黄花也被称作忘忧草、母亲花。两个名字，一边寄托消解忧愁的愿望，一边连着对母亲与家乡的思念。</p>
+          <a href="https://scbg.cas.cn/hx/202306/t20230620_6783997.html" target="_blank" rel="noopener noreferrer">了解忘忧与母亲花文化 ↗</a>
+        </article>
+        <article>
+          <img src="assets/culture/field-memory-v48.webp" alt="依据家庭原照 AI 重绘：长辈与小女孩蹲在田间，重现童年劳作记忆" width="1536" height="1024" loading="lazy" decoding="async">
+          <h3>田间记忆</h3>
+          <p>从田间拣采到选料、蒸制、摊晾，鲜嫩的花苞经过一道道工序，才成为餐桌上熟悉的干黄花。</p>
+          <a href="https://sc.people.com.cn/n2/2023/0620/c345167-40464890.html" target="_blank" rel="noopener">查看采摘与加工纪实 ↗</a>
+        </article>
+        <article>
+          <div class="sequence sequence-triptych" aria-label="黄花从含苞到盛放的三个阶段"><img src="assets/culture-stages/daylily-v26.webp" width="1586" height="992" alt="黄花三阶段对照：左侧含苞，中间舒展，右侧完整盛放；花茎端正、花瓣完整" loading="lazy" decoding="async" fetchpriority="low"><div class="stage-labels" aria-hidden="true"><span>含苞</span><span>舒展</span><span>盛放</span></div></div>
+          <h3>指尖忘忧</h3>
+          <p>计算机视觉识别手部关键点，双指距离决定花开到哪一步。停在半开处，可以慢慢观察平时容易错过的变化。</p>
+          <a href="#home">回到互动展品 ↑</a>
+        </article>
+      </div>
+    </section>
+
+    <p id="cultureCredit" class="kitchen-note">花田与竹筛配图为 AI 场景示意；田间记忆依据家庭原照 AI 重绘。花卉动态取自原有互动素材。</p>
+    <section id="kitchen" class="culture kitchen" aria-labelledby="kitchenTitle"><div class="section-heading"><p class="eyebrow">BLOOM TO TABLE</p><h2 id="kitchenTitle">黄花入馔 · 家常有味</h2></div><p id="kitchenIntro" class="section-intro"></p><div id="recipeGrid" class="culture-grid"></div><p id="kitchenNote" class="kitchen-note"></p></section>
+    <section id="market" class="market" aria-labelledby="marketTitle">
+      <div class="section-heading"><p class="eyebrow">GOOD THINGS, FROM THEIR ORIGIN</p><h2 id="marketTitle">让花开有价值 · 让好物被看见</h2></div>
+      <p id="marketIntro" class="section-intro"></p>
+      <div id="productGrid" class="product-grid"></div>
+      <div class="market-footer"><p id="marketNote"></p><p class="checked-date">渠道资料核对：2026.11.19</p></div>
+      <div class="origin-explore"><p>探索更多产地好物</p><div id="originExplore"></div></div>
+    </section>
+    <section id="about" class="about" aria-labelledby="aboutTitle">
+      <div class="section-heading"><p class="eyebrow">ABOUT</p><h2 id="aboutTitle">关于掌间花开</h2></div>
+      <div class="about-copy"><p>掌间花开，是一场四川特色花卉、乡土文化与数字艺术的相遇。从渠县黄花、江油辛夷、中江荷花、犍为茉莉到攀枝花木棉，以双手为媒介，轻挥切换花卉，指尖开合控制绽放。借助AI辅助开发与MediaPipe手势识别技术，让每一朵花在数字空间中生动呈现。</p><p>项目创新性融合智能交互、非遗文化与特色农产品推介，串联“指尖互动—文化认知—产品推介—消费连接”的数字助农路径。我们希望以互动唤起好奇，以产地故事传递乡土温度，以真实产品渠道连接消费市场，让被看见的不只是一朵花，更是花背后的土地、手艺与劳作，探索数字技术赋能乡村振兴的新路径。</p></div>
+    </section>
+  </main>
+  <footer class="shell site-footer"><span>掌间花开 · 四川渠县</span><a href="#home">返回顶部 ↑</a></footer>
+  <script type="module" src="app.js?v=48"></script>
+</body>
+</html>

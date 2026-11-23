@@ -1,0 +1,13 @@
+import assert from 'node:assert/strict';
+import {HandRoles} from '../dist/hand-roles.js';
+const hand=(side,x,score=.99)=>({side,score,landmarks:Array.from({length:21},()=>({x,y:.5}))});
+const r=new HandRoles();
+assert.equal(r.update([hand('Right',.7),hand('Left',.3)],0).length,0);
+r.update([hand('Right',.7),hand('Left',.3)],33);
+let h=r.update([hand('Right',.7),hand('Left',.3)],66);assert.equal(h.length,2);
+h=r.update([hand('Left',.71),hand('Right',.31)],99);
+assert.equal(h.find(v=>v.landmarks[0].x>.5).side,'Right','flickering label does not swap role');
+h=r.update([hand('Right',.7)],132);assert.equal(h.length,1);assert.equal(h[0].side,'Right','remaining navigation hand never becomes pinch hand');
+r.reset();for(let i=0;i<5;i++)assert.equal(r.update([hand('Left',.3,.5)],i*33).length,0,'uncertain label cannot control');
+assert.equal(r.update([],600).length,0);
+console.log('Passed: stable identity, classifier flicker, one hand exits, low confidence, missing hands.');

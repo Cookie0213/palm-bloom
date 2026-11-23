@@ -1,0 +1,23 @@
+import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
+import {readSequence,unpackSequence} from '../dist/sequence-store.js';
+const raw=await readFile(new URL('../dist/assets/sequences-v22/daylily/hd.bin',import.meta.url));
+const bytes=new Uint8Array(raw),headerLength=new DataView(bytes.buffer,bytes.byteOffset).getUint32(0,true);
+const header=JSON.parse(new TextDecoder().decode(bytes.slice(4,4+headerLength)));
+const boundary=4+headerLength+header.lengths[0];
+let controller,release;const decoded=[];
+const stream=new ReadableStream({start(c){controller=c;c.enqueue(bytes.slice(0,boundary));}});
+const first=new Promise(r=>release=r);
+const reading=readSequence(new Response(stream),{onFrame:async(blob,n)=>{decoded.push(n);if(n===0)release();}});
+await first;assert.deepEqual(decoded,[0],'decode starts before the rest of the download arrives');
+controller.enqueue(bytes.slice(boundary));controller.close();
+const frames=await reading;
+const original=unpackSequence(bytes.buffer.slice(bytes.byteOffset,bytes.byteOffset+bytes.byteLength));
+for(let n=0;n<96;n++)assert.deepEqual(new Uint8Array(await frames[n].arrayBuffer()),new Uint8Array(await original[n].arrayBuffer()),'original frame bytes are unchanged');
+assert.equal(decoded.length,96);
+// Exercise splitting the 4-byte prefix, JSON header and image bodies.
+let offset=0;const fragments=new ReadableStream({pull(c){if(offset>=bytes.length)return c.close();const size=offset<4?1:offset<4+headerLength?37:8191;c.enqueue(bytes.slice(offset,offset+size));offset+=size;}});
+assert.equal((await readSequence(new Response(fragments))).length,96);
+await assert.rejects(readSequence(new Response(bytes.slice(0,-1))),/Incomplete/);
+await assert.rejects(readSequence(new Response(bytes),{onFrame:()=>{throw Error('decode failed');}}),/decode failed/);
+console.log('Passed: download/decode overlap, exact original bytes for all 96 frames, arbitrary chunk boundaries, truncation and decode errors.');

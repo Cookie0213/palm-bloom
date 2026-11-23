@@ -1,0 +1,17 @@
+{
+  "name": "palm-bloom",
+  "version": "3.0.0",
+  "private": true,
+  "description": "掌间花开：四川特色花卉手势交互与数字助农展示",
+  "type": "module",
+  "license": "MIT",
+  "author": "黄诗芮",
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "check": "node scripts/check-release.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

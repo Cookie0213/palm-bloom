@@ -1,0 +1,21 @@
+# Local tools, caches and private configuration
+node_modules/
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc
+*.log
+.openai/
+.sites-checkout/
+.local/
+.coverage/
+output/
+tmp/
+# Do not commit another release archive into the source repository
+*.zip
+*.tar.gz
+# Original family photograph is deliberately excluded from this public snapshot
+dist/assets/culture/harvest.webp

@@ -1,0 +1,246 @@
+[
+  {
+    "key": "daylily-origin",
+    "path": "dist/assets/ai-scenes-v47/daylily-origin.webp",
+    "prompt": "Create one original photorealistic editorial agricultural image for an elegant Chinese botanical website, horizontal 3:2 composition, high resolution. Theme: harvesting edible daylily buds in the rolling countryside of eastern Sichuan, inspired by the general rural industry of Quxian, NOT a reconstruction of a real news photograph or named farm. In the foreground a weathered bamboo basket filled with slender fresh unopened yellow-green daylily buds sits beside narrow strap-shaped leaves; middle ground one adult farmer seen at a distance from behind quietly picks buds, undulating plots and hazy wooded hills behind. Early morning soft light, restrained natural sage greens and golden straw, fine botanical textures, sophisticated rural editorial photography. Clear subject inside central 80% to fit landscape cards. No logos, no text, no signs, no watermarks, no recognizable public figures. New composition, no reference photograph.",
+    "method": "Built-in image generation; original text-to-image, no news image input",
+    "replaces": [
+      "assets/origin/daylily-harvest-v25.webp"
+    ]
+  },
+  {
+    "key": "xinyi-origin",
+    "path": "dist/assets/ai-scenes-v47/xinyi-origin.webp",
+    "prompt": "Generate one ORIGINAL photorealistic landscape 3:2 editorial photograph-style illustration for a sophisticated botanical agriculture website. Rich fine detail, softly restrained natural colors, credible rural textures, graceful composition within central 80% for image cards. No text, watermark, signage, brands or recognizable individuals. It is an imagined illustrative scene, not documentation of a named real location or business. Do not copy any existing photograph. A mature pink-white flowering Magnolia biondii tree in a Sichuan mountain farm, entire spreading crown and textured trunk visible, mossy stone terrace and distant layered mountains. Early spring, largely leafless flowering branches, delicate upright tulip-shaped flowers, gentle morning haze. Low three-quarter viewpoint with trunk right of center, softly lit blossoms frame the open hillside. Peaceful heritage cultivation theme.",
+    "method": "Built-in image generation; original text-to-image, no news image input",
+    "replaces": [
+      "assets/origin/xinyi-oldtree-v25.webp"
+    ]
+  },
+  {
+    "key": "lotus-origin",
+    "path": "dist/assets/ai-scenes-v47/lotus-origin.webp",
+    "prompt": "Generate one ORIGINAL photorealistic landscape 3:2 editorial photograph-style illustration for a sophisticated botanical agriculture website. Rich fine detail, softly restrained natural colors, credible rural textures, graceful composition within central 80% for image cards. No text, watermark, signage, brands or recognizable individuals. It is an imagined illustrative scene, not documentation of a named real location or business. Do not copy any existing photograph. An expansive summer lotus farm in the Sichuan basin, gently curving irrigation dike entering from lower right, lush round lotus leaves with scattered pink Nelumbo flowers and seedpods, low grey-tile rural houses far behind and wooded hills. Elevated yet intimate viewpoint, clear summer dawn, subtle pink accents, landscape and agriculture balanced. Not any recognizable tourist site.",
+    "method": "Built-in image generation; original text-to-image, no news image input",
+    "replaces": [
+      "assets/origin/lotus-origin.webp"
+    ]
+  },
+  {
+    "key": "jasmine-origin",
+    "path": "dist/assets/ai-scenes-v47/jasmine-origin.webp",
+    "prompt": "Generate one ORIGINAL photorealistic landscape 3:2 editorial photograph-style illustration for a sophisticated botanical agriculture website. Rich fine detail, softly restrained natural colors, credible rural textures, graceful composition within central 80% for image cards. No text, watermark, signage, brands or recognizable individuals. It is an imagined illustrative scene, not documentation of a named real location or business. Do not copy any existing photograph. Close three-quarter view of an artisan's anonymous forearms gently blending fresh small white Jasminum sambac flowers with loose tea leaves in a shallow bamboo tray on a clean wooden worktable in a traditional tea workshop. Small bowls of jasmine buds and tea separate beside it, daylight from a side window, visible petal and tea textures, cream and olive tones, no face, no named factory. Theme scenting jasmine tea.",
+    "method": "Built-in image generation; original text-to-image, no news image input",
+    "replaces": [
+      "assets/jasmine/origin-tea-v32.webp"
+    ]
+  },
+  {
+    "key": "panzhihua-origin",
+    "path": "dist/assets/ai-scenes-v47/panzhihua-origin.webp",
+    "prompt": "Generate one ORIGINAL photorealistic landscape 3:2 editorial photograph-style illustration for a sophisticated botanical agriculture website. Rich fine detail, softly restrained natural colors, credible rural textures, graceful composition within central 80% for image cards. No text, watermark, signage, brands or recognizable individuals. It is an imagined illustrative scene, not documentation of a named real location or business. Do not copy any existing photograph. A tall flowering Bombax ceiba tree on a cultivated terrace overlooking a dry warm river valley in southwest Sichuan, branching silhouette with naturally sparse thick orange-red five-petaled flowers, no leaves on flowering limbs, textured old trunk, winding turquoise river and terraced fields in middle distance. Golden morning light, wide environmental composition, ordinary imagined landscape not a specific historic tree or monument.",
+    "method": "Built-in image generation; original text-to-image, no news image input",
+    "replaces": [
+      "assets/panzhihua/origin-ancient-tree.webp"
+    ]
+  },
+  {
+    "key": "daylily-field",
+    "path": "dist/assets/ai-scenes-v47/daylily-field.webp",
+    "prompt": "Generate one ORIGINAL photorealistic landscape 3:2 editorial photograph-style illustration for a sophisticated botanical agriculture website. Rich fine detail, softly restrained natural colors, credible rural textures, graceful composition within central 80% for image cards. No text, watermark, signage, brands or recognizable individuals. It is an imagined illustrative scene, not documentation of a named real location or business. Do not copy any existing photograph. Wide low hillside farm of edible daylilies in eastern Sichuan, long gently curving rows of arching narrow strap leaves and slender yellow-green buds, several natural six-tepaled golden flowers in foreground, small grey tiled farmhouse in distant trees. Clear fresh morning after rain, layered green hills. No people. This is an agricultural landscape, not a field of ornamental tulips.",
+    "method": "Built-in image generation; original text-to-image, no news image input",
+    "replaces": [
+      "assets/culture/field.webp"
+    ]
+  },
+  {
+    "key": "daylily-trays",
+    "path": "dist/assets/ai-scenes-v47/daylily-trays.webp",
+    "prompt": "Generate one ORIGINAL photorealistic landscape 3:2 editorial photograph-style illustration for a sophisticated botanical agriculture website. Rich fine detail, softly restrained natural colors, credible rural textures, graceful composition within central 80% for image cards. No text, watermark, signage, brands or recognizable individuals. It is an imagined illustrative scene, not documentation of a named real location or business. Do not copy any existing photograph. A rural courtyard still life of shallow bamboo sieves holding slender freshly picked yellow-green edible daylily buds, one sieve on a low wooden stool in foreground, steam faintly rising from a covered traditional steamer well behind, weathered plaster wall and soft courtyard light. Distinct diagonal composition, refined texture, calm earth tones. Illustrative traditional processing, not a specific heritage workshop.",
+    "method": "Built-in image generation; original text-to-image, no news image input",
+    "replaces": [
+      "assets/culture/bloom.webp"
+    ]
+  },
+  {
+    "key": "daylily-dry",
+    "path": "dist/assets/ai-scenes-v47/daylily-dry.webp",
+    "prompt": "Generate one ORIGINAL photorealistic landscape 3:2 editorial photograph-style illustration for a sophisticated botanical agriculture website. Rich fine detail, softly restrained natural colors, credible rural textures, graceful composition within central 80% for image cards. No text, watermark, signage, brands or recognizable individuals. It is an imagined illustrative scene, not documentation of a named real location or business. Do not copy any existing photograph. Elegant close product still life of naturally dried edible daylily buds: golden tan slender wrinkled strips in a shallow plain ceramic bowl on warm unbleached linen, a few loose pieces and a closed plain kraft paper pouch in background. No fresh flowers, no branding. Realistic modest food ingredient proportions and textures. Not a photograph of a specific merchant's goods.",
+    "method": "Built-in image generation; original text-to-image, no news image input",
+    "replaces": [
+      "assets/origin/daylily-dry.webp"
+    ]
+  },
+  {
+    "key": "daylily-packing",
+    "path": "dist/assets/ai-scenes-v47/daylily-packing.webp",
+    "prompt": "Generate one ORIGINAL photorealistic landscape 3:2 editorial photograph-style illustration for a sophisticated botanical agriculture website. Rich fine detail, softly restrained natural colors, credible rural textures, graceful composition within central 80% for image cards. No text, watermark, signage, brands or recognizable individuals. It is an imagined illustrative scene, not documentation of a named real location or business. Do not copy any existing photograph. Illustrative small clean agricultural packing workshop: gloved hands sorting dried edible daylily buds into plain unprinted paper pouches on a stainless steel table; shallow trays of golden brown dried buds, one stack of unbranded boxes, daylight from high windows. Tight mid shot, no faces, no logos, no invented factory signage, simple realistic hygiene and materials.",
+    "method": "Built-in image generation; original text-to-image, no news image input",
+    "replaces": [
+      "assets/origin/daylily-packing.webp"
+    ]
+  },
+  {
+    "key": "xinyi-mountain",
+    "path": "dist/assets/ai-scenes-v47/xinyi-mountain.webp",
+    "prompt": "Generate one ORIGINAL photorealistic landscape 3:2 editorial photograph-style illustration for a sophisticated botanical agriculture website. Rich fine detail, softly restrained natural colors, credible rural textures, graceful composition within central 80% for image cards. No text, watermark, signage, brands or recognizable individuals. It is an imagined illustrative scene, not documentation of a named real location or business. Do not copy any existing photograph. Wide mountain panorama inspired by Sichuan spring agriculture: scattered mature pink-white Magnolia biondii trees along irregular mountain terraces, largely bare branches with upright blossoms, wooded ridge and a tiny rural roof in distance, mist lifting in morning, view across the hillside rather than upward at a single tree. No people.",
+    "method": "Built-in image generation; original text-to-image, no news image input",
+    "replaces": [
+      "assets/culture-xinyi/mountain.jpg"
+    ]
+  },
+  {
+    "key": "xinyi-branches",
+    "path": "dist/assets/ai-scenes-v47/xinyi-branches.webp",
+    "prompt": "Generate one ORIGINAL photorealistic landscape 3:2 editorial photograph-style illustration for a sophisticated botanical agriculture website. Rich fine detail, softly restrained natural colors, credible rural textures, graceful composition within central 80% for image cards. No text, watermark, signage, brands or recognizable individuals. It is an imagined illustrative scene, not documentation of a named real location or business. Do not copy any existing photograph. Intimate botanical editorial close-up of a living Magnolia biondii branch in early spring, graceful grey bark with pink-white upright cup-shaped flowers and several silver-haired buds at different stages, natural irregular branching, softly blurred green mountain background, side lighting, flowers dominate middle third, no vase, no cut stems.",
+    "method": "Built-in image generation; original text-to-image, no news image input",
+    "replaces": [
+      "assets/culture-xinyi/trees.jpg"
+    ]
+  },
+  {
+    "key": "xinyi-village",
+    "path": "dist/assets/ai-scenes-v47/xinyi-village.webp",
+    "prompt": "Generate one ORIGINAL photorealistic landscape 3:2 editorial photograph-style illustration for a sophisticated botanical agriculture website. Rich fine detail, softly restrained natural colors, credible rural textures, graceful composition within central 80% for image cards. No text, watermark, signage, brands or recognizable individuals. It is an imagined illustrative scene, not documentation of a named real location or business. Do not copy any existing photograph. Spring Sichuan mountain village life beneath magnolia trees: a stone footpath winding between modest white plaster grey tile farmhouses and irregular pink-white flowering trees, small vegetable beds and a bamboo basket resting near a doorway. Distant anonymous figure walking away, no face detail. Warm calm late afternoon, realistic rustic settlement, no tourist signage or famous buildings.",
+    "method": "Built-in image generation; original text-to-image, no news image input",
+    "replaces": [
+      "assets/culture-xinyi/village.jpg"
+    ]
+  },
+  {
+    "key": "lotus-pond",
+    "path": "dist/assets/ai-scenes-v47/lotus-pond.webp",
+    "prompt": "Generate one ORIGINAL photorealistic landscape 3:2 editorial photograph-style illustration for a sophisticated botanical agriculture website. Rich fine detail, softly restrained natural colors, credible rural textures, graceful composition within central 80% for image cards. No text, watermark, signage, brands or recognizable individuals. It is an imagined illustrative scene, not documentation of a named real location or business. Do not copy any existing photograph. Intimate eye-level summer lotus pond: graceful pink Nelumbo nucifera flower and unopened bud rising above broad round waxy green leaves in foreground, reflective water visible through gaps, blurred humid Sichuan countryside beyond. Soft early light and dew, calm elegance, flower fully in frame, no buildings or people.",
+    "method": "Built-in image generation; original text-to-image, no news image input",
+    "replaces": [
+      "assets/culture-lotus/pond.jpg"
+    ]
+  },
+  {
+    "key": "lotus-culture",
+    "path": "dist/assets/ai-scenes-v47/lotus-culture.webp",
+    "prompt": "Generate one ORIGINAL photorealistic landscape 3:2 editorial photograph-style illustration for a sophisticated botanical agriculture website. Rich fine detail, softly restrained natural colors, credible rural textures, graceful composition within central 80% for image cards. No text, watermark, signage, brands or recognizable individuals. It is an imagined illustrative scene, not documentation of a named real location or business. Do not copy any existing photograph. A tranquil rural lotus pond beside a simple pale stone footpath and small unadorned pavilion reflected in water, scattered pale pink lotus blooms, dense round leaves, gentle shade of bamboo in distant background. Composition conveys clarity and quiet contemplation, no statues, no plaques, no named heritage structure. Refined restrained greens and soft pink.",
+    "method": "Built-in image generation; original text-to-image, no news image input",
+    "replaces": [
+      "assets/culture-lotus/village.jpg"
+    ]
+  },
+  {
+    "key": "lotus-industry",
+    "path": "dist/assets/ai-scenes-v47/lotus-industry.webp",
+    "prompt": "Generate one ORIGINAL photorealistic landscape 3:2 editorial photograph-style illustration for a sophisticated botanical agriculture website. Rich fine detail, softly restrained natural colors, credible rural textures, graceful composition within central 80% for image cards. No text, watermark, signage, brands or recognizable individuals. It is an imagined illustrative scene, not documentation of a named real location or business. Do not copy any existing photograph. Farm-table still life at a lotus pond edge: a wicker basket of freshly washed segmented lotus roots, cut green lotus seed heads showing realistic embedded seeds, a small bowl of peeled pale lotus seeds and a folded lotus leaf. Green pond soft in background, morning light, earthy wood table. Ingredient diversity and harvest theme, no cooked food, no labels.",
+    "method": "Built-in image generation; original text-to-image, no news image input",
+    "replaces": [
+      "assets/culture-lotus/industry.jpg",
+      "assets/origin/lotus-harvest.webp"
+    ]
+  },
+  {
+    "key": "lotus-products",
+    "path": "dist/assets/ai-scenes-v47/lotus-products.webp",
+    "prompt": "Generate one ORIGINAL photorealistic landscape 3:2 editorial photograph-style illustration for a sophisticated botanical agriculture website. Rich fine detail, softly restrained natural colors, credible rural textures, graceful composition within central 80% for image cards. No text, watermark, signage, brands or recognizable individuals. It is an imagined illustrative scene, not documentation of a named real location or business. Do not copy any existing photograph. Refined food ingredient still life on warm natural linen: a plain ceramic bowl of fine white lotus root starch beside sliced pale lotus root, loose dried crumbled lotus leaf tea in a small wooden dish and a glass cup of light amber tea. No packaging, branding, flowers or medicinal claims. Soft window light, high detail, balanced spacing, generic product category illustration.",
+    "method": "Built-in image generation; original text-to-image, no news image input",
+    "replaces": [
+      "assets/origin/lotus-field.webp"
+    ]
+  },
+  {
+    "key": "xinyi-buds",
+    "path": "dist/assets/ai-scenes-v47/xinyi-buds.webp",
+    "prompt": "Generate one ORIGINAL photorealistic landscape 3:2 editorial photograph-style illustration for a sophisticated botanical agriculture website. Rich fine detail, softly restrained natural colors, credible rural textures, graceful composition within central 80% for image cards. No text, watermark, signage, brands or recognizable individuals. It is an imagined illustrative scene, not documentation of a named real location or business. Do not copy any existing photograph. Botanical material still life of dried unopened Magnolia flower buds (traditional xinyi medicinal raw material): small elongated oval grey-brown buds densely covered in fine silky hairs, scattered on a shallow plain bamboo tray over natural linen, a tiny dormant magnolia twig beside them. Fine macro textures, neutral side lighting. No tea cup, no food, no capsules, no labels, no claims; raw plant material only.",
+    "method": "Built-in image generation; original text-to-image, no news image input",
+    "replaces": [
+      "assets/origin/xinyi-buds.webp"
+    ]
+  },
+  {
+    "key": "xinyi-bees",
+    "path": "dist/assets/ai-scenes-v47/xinyi-bees.webp",
+    "prompt": "Generate one ORIGINAL photorealistic landscape 3:2 editorial photograph-style illustration for a sophisticated botanical agriculture website. Rich fine detail, softly restrained natural colors, credible rural textures, graceful composition within central 80% for image cards. No text, watermark, signage, brands or recognizable individuals. It is an imagined illustrative scene, not documentation of a named real location or business. Do not copy any existing photograph. Several modest wooden beehive boxes arranged irregularly on a grassy Sichuan mountain terrace under sparse spring flowering pink-white magnolia branches, mixed forest in distance. Gentle sun, realistic hand-built boxes, quiet understory farming atmosphere. Hives fully framed, no beekeeper, no logos or writing, no oversized bees.",
+    "method": "Built-in image generation; original text-to-image, no news image input",
+    "replaces": [
+      "assets/origin/xinyi-bees.webp"
+    ]
+  },
+  {
+    "key": "jasmine-field",
+    "path": "dist/assets/ai-scenes-v47/jasmine-field.webp",
+    "prompt": "Generate one ORIGINAL photorealistic landscape 3:2 editorial photograph-style illustration for a sophisticated botanical agriculture website. Rich fine detail, softly restrained natural colors, credible rural textures, graceful composition within central 80% for image cards. No text, watermark, signage, brands or recognizable individuals. It is an imagined illustrative scene, not documentation of a named real location or business. Do not copy any existing photograph. A softly rolling Sichuan agricultural field of low Jasminum sambac bushes with glossy oval leaves and many tiny white rounded buds, gently curved row paths leading toward distant bamboo groves and low hills. Natural summer morning light, botanical scale correct, no large lily-like flowers, no people or buildings close-up. Fresh olive and ivory tones.",
+    "method": "Built-in image generation; original text-to-image, no news image input",
+    "replaces": [
+      "assets/jasmine/tea-v32.webp"
+    ]
+  },
+  {
+    "key": "jasmine-harvest",
+    "path": "dist/assets/ai-scenes-v47/jasmine-harvest.webp",
+    "prompt": "Generate one ORIGINAL photorealistic landscape 3:2 editorial photograph-style illustration for a sophisticated botanical agriculture website. Rich fine detail, softly restrained natural colors, credible rural textures, graceful composition within central 80% for image cards. No text, watermark, signage, brands or recognizable individuals. It is an imagined illustrative scene, not documentation of a named real location or business. Do not copy any existing photograph. Close mid-shot of an anonymous adult farmer's hands gently picking small plump white unopened Jasminum sambac buds from a low green bush into a woven waist basket. Glossy oval leaves, a few small rounded-petal jasmine blossoms, natural uneven vegetation, warm overcast summer light. Frame excludes face, believable fingers and crop scale. Fresh flower harvesting theme.",
+    "method": "Built-in image generation; original text-to-image, no news image input",
+    "replaces": [
+      "assets/jasmine/harvest-v32.webp"
+    ]
+  },
+  {
+    "key": "jasmine-craft",
+    "path": "dist/assets/ai-scenes-v47/jasmine-craft.webp",
+    "prompt": "Generate one ORIGINAL photorealistic landscape 3:2 editorial photograph-style illustration for a sophisticated botanical agriculture website. Rich fine detail, softly restrained natural colors, credible rural textures, graceful composition within central 80% for image cards. No text, watermark, signage, brands or recognizable individuals. It is an imagined illustrative scene, not documentation of a named real location or business. Do not copy any existing photograph. Top-down oblique detail of traditional jasmine tea scenting materials on a clean dark wood table: one large bamboo tray holding a shallow layer of wiry green tea interspersed with tiny fresh white Jasminum sambac flowers, a separate bamboo scoop and a small plain bowl of buds. No hands, no cups, no packaging. Clear material separation and believable proportions, delicate soft daylight.",
+    "method": "Built-in image generation; original text-to-image, no news image input",
+    "replaces": [
+      "assets/jasmine/heritage-v32.webp"
+    ]
+  },
+  {
+    "key": "jasmine-tea",
+    "path": "dist/assets/ai-scenes-v47/jasmine-tea.webp",
+    "prompt": "Generate one ORIGINAL photorealistic landscape 3:2 editorial photograph-style illustration for a sophisticated botanical agriculture website. Rich fine detail, softly restrained natural colors, credible rural textures, graceful composition within central 80% for image cards. No text, watermark, signage, brands or recognizable individuals. It is an imagined illustrative scene, not documentation of a named real location or business. Do not copy any existing photograph. Elegant unbranded jasmine tea product still life: a plain ivory porcelain gaiwan containing clear pale gold tea, lid resting to one side, a small dish of loose twisted tea leaves and a short fresh Jasminum sambac sprig with two tiny white blossoms on natural linen. Quiet side-window light, finely detailed glaze and leaves, no text or commercial packaging.",
+    "method": "Built-in image generation; original text-to-image, no news image input",
+    "replaces": [
+      "assets/jasmine/processing.webp"
+    ]
+  },
+  {
+    "key": "jasmine-cooperative",
+    "path": "dist/assets/ai-scenes-v47/jasmine-cooperative.webp",
+    "prompt": "Generate one ORIGINAL photorealistic landscape 3:2 editorial photograph-style illustration for a sophisticated botanical agriculture website. Rich fine detail, softly restrained natural colors, credible rural textures, graceful composition within central 80% for image cards. No text, watermark, signage, brands or recognizable individuals. It is an imagined illustrative scene, not documentation of a named real location or business. Do not copy any existing photograph. A generic small rural tea sorting workspace by an open window: two sets of anonymous adult hands separating dried tea into plain shallow bamboo baskets, unprinted kraft paper packets stacked nearby and a sprig of small white jasmine flowers in a plain cup at far edge. No faces, no brand, no logo, no sign. Illustrate collaboration in tea production, not any actual company or meeting.",
+    "method": "Built-in image generation; original text-to-image, no news image input",
+    "replaces": [
+      "assets/jasmine/cooperative.webp"
+    ]
+  },
+  {
+    "key": "panzhihua-city",
+    "path": "dist/assets/ai-scenes-v47/panzhihua-city.webp",
+    "prompt": "Generate one ORIGINAL photorealistic landscape 3:2 editorial photograph-style illustration for a sophisticated botanical agriculture website. Rich fine detail, softly restrained natural colors, credible rural textures, graceful composition within central 80% for image cards. No text, watermark, signage, brands or recognizable individuals. It is an imagined illustrative scene, not documentation of a named real location or business. Do not copy any existing photograph. A generic sunny southwest Sichuan river-valley town seen from a hillside, low terracotta and cream buildings along a turquoise river, orange-red flowering Bombax ceiba branches framing the upper left, distant dry warm hills. Realistic modest city scale, bright soft late winter light, blossoms with five thick petals on leafless branches, no identifiable landmark or lettering.",
+    "method": "Built-in image generation; original text-to-image, no news image input",
+    "replaces": [
+      "assets/panzhihua/flower-city.webp"
+    ]
+  },
+  {
+    "key": "panzhihua-detail",
+    "path": "dist/assets/ai-scenes-v47/panzhihua-detail.webp",
+    "prompt": "Generate one ORIGINAL photorealistic landscape 3:2 editorial photograph-style illustration for a sophisticated botanical agriculture website. Rich fine detail, softly restrained natural colors, credible rural textures, graceful composition within central 80% for image cards. No text, watermark, signage, brands or recognizable individuals. It is an imagined illustrative scene, not documentation of a named real location or business. Do not copy any existing photograph. Botanical close-up of two orange-red Bombax ceiba flowers attached to a woody leafless twig, FIVE broad thick fleshy petals per flower, dense central cluster of many long yellow-tipped stamens, side view and three-quarter view, dark bark, softly blurred dry river-valley landscape. Natural asymmetry, complete flowers clearly framed, no extra petals, no hibiscus style long single column.",
+    "method": "Built-in image generation; original text-to-image, no news image input",
+    "replaces": [
+      "assets/panzhihua/flower-detail.webp"
+    ]
+  },
+  {
+    "key": "panzhihua-village",
+    "path": "dist/assets/ai-scenes-v47/panzhihua-village.webp",
+    "prompt": "Generate one ORIGINAL photorealistic landscape 3:2 editorial photograph-style illustration for a sophisticated botanical agriculture website. Rich fine detail, softly restrained natural colors, credible rural textures, graceful composition within central 80% for image cards. No text, watermark, signage, brands or recognizable individuals. It is an imagined illustrative scene, not documentation of a named real location or business. Do not copy any existing photograph. A quiet ordinary rural courtyard in a warm southwest Sichuan valley, modest pale earthen plaster house and stone lane beside a medium Bombax ceiba tree with orange-red blossoms on leafless branches, terraced farmland beyond, afternoon light. Unposed daily-life atmosphere with a bamboo stool and basket, no people, no plaques, no landmark buildings. Entire tree crown mostly visible in landscape composition.",
+    "method": "Built-in image generation; original text-to-image, no news image input",
+    "replaces": [
+      "assets/panzhihua/flower-village.webp"
+    ]
+  },
+  {
+    "key": "panzhihua-walk",
+    "path": "dist/assets/ai-scenes-v47/panzhihua-walk.webp",
+    "prompt": "Generate one ORIGINAL photorealistic landscape 3:2 editorial photograph-style illustration for a sophisticated botanical agriculture website. Rich fine detail, softly restrained natural colors, credible rural textures, graceful composition within central 80% for image cards. No text, watermark, signage, brands or recognizable individuals. It is an imagined illustrative scene, not documentation of a named real location or business. Do not copy any existing photograph. A winding rural walking path along a calm river terrace with several leafless Bombax ceiba trees bearing scattered orange-red flowers, a simple wooden bench beneath a tree, agricultural fields and dry rolling hills in distance. A tranquil village walking experience, no specific landmark, no monument, no built-up city, soft early evening light, refined natural textures.",
+    "method": "Built-in image generation; original text-to-image, no news image input",
+    "replaces": [
+      "assets/panzhihua/ancient-tree.webp"
+    ]
+  }
+]
