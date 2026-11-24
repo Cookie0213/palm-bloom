@@ -517,9 +517,6 @@ function releaseTracker() {
 
 function getTracker() {
   if (trackerLoad) return trackerLoad.promise;
-  const gl=document.createElement('canvas').getContext('webgl2');
-  if(!gl)throw new Error('WEBGL');
-  gl.getExtension('WEBGL_lose_context')?.loseContext();
   const controller=new AbortController();
   const load={controller,promise:null};
   trackerLoad=load;
@@ -617,7 +614,6 @@ async function startCamera() {
       NotReadableError: '摄像头可能被其他程序占用。关闭其他摄像头应用后可重试。',
       SECURE: '请在独立的 HTTPS 页面打开手势体验。滑块仍可使用。',
       MODEL_TIMEOUT: '识别模型加载超时，请检查网络后重试。',
-      WEBGL: '当前浏览器无法使用 WebGL 2。可拖动滑块，或在 Chrome / Edge 开启图形加速后重试。',
     };
     cameraFailure(messages[error.name] || messages[error.message] || '手势识别启动失败，可重新开启或拖动滑块。', error.name === 'NotAllowedError' ? '权限未开启' : '暂不可用');
   }
