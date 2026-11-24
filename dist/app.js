@@ -495,7 +495,7 @@ function prepareTracker(tracker, signal, delegate='CPU') {
       else resolve();
     };
     signal.addEventListener('abort', cancel, { once: true });
-    tracker.onerror = () => finish(new Error('MODEL_ERROR'));
+    tracker.onerror = event => finish(new Error(event.message || 'MODEL_ERROR'));
     tracker.onmessage = ({ data }) => {
       if (data.type === 'ready') finish();
       if (data.type === 'error') finish(new Error(data.message || 'MODEL_ERROR'));
@@ -527,7 +527,7 @@ function getTracker() {
   load.promise=(async()=>{
     for(const delegate of ['CPU']){
       if(controller.signal.aborted)throw controller.signal.reason;
-      const candidate=new Worker(new URL('./hand-worker.js?v=46',import.meta.url));
+      const candidate=new Worker(new URL('./hand-worker.js?v=49',import.meta.url));
       worker=candidate;
       try{
         await prepareTracker(candidate,controller.signal,delegate);
@@ -610,6 +610,7 @@ async function startCamera() {
     startFrameCapture(session);
   } catch (error) {
     if (session.signal.aborted) return;
+    console.warn('Palm Bloom hand interaction:', error);
     const messages = {
       NotAllowedError: '摄像头权限未开启。可拖动滑块，或在浏览器地址栏允许权限后重试。',
       NotFoundError: '未找到摄像头。可连接摄像头后重试，或拖动滑块。',

@@ -79,11 +79,11 @@ function tracker(){
  if(trackerLoad)return trackerLoad;
  button.dataset.trackerState='loading';
  trackerLoad=new Promise((resolve,reject)=>{
-  const w=new Worker(new URL('./home-hand-worker.js?v=46',import.meta.url));worker=w;
+  const w=new Worker(new URL('./home-hand-worker.js?v=49',import.meta.url));worker=w;
   let done=false;const timer=setTimeout(()=>finish(Error('MODEL_TIMEOUT')),30000);
-  function finish(error){if(done)return;done=true;clearTimeout(timer);trackerCancel=null;if(error){w.terminate();if(worker===w){worker=null;trackerLoad=null;}button.dataset.trackerState='error';reject(error);}else{button.dataset.trackerState='ready';resolve();}}
+  function finish(error){if(done)return;done=true;clearTimeout(timer);trackerCancel=null;if(error){button.dataset.trackerError=error.message;console.warn('Palm Bloom hand tracker:',error.message);w.terminate();if(worker===w){worker=null;trackerLoad=null;}button.dataset.trackerState='error';reject(error);}else{button.dataset.trackerState='ready';resolve();}}
   trackerCancel=()=>finish(Error('CANCELLED'));
-  w.onerror=()=>{if(!done)finish(Error('MODEL'));else{releaseTracker();if(session)fail('手势识别遇到问题，请重新开启。滑块仍可使用。');}};
+  w.onerror=event=>{if(!done)finish(Error(event.message||'MODEL'));else{releaseTracker();if(session)fail('手势识别遇到问题，请重新开启。滑块仍可使用。');}};
   w.onmessage=({data})=>{
    if(worker!==w){data.bitmap?.close();return;}
    if(data.type==='ready')finish();
