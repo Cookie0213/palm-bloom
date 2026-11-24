@@ -527,7 +527,7 @@ function getTracker() {
   load.promise=(async()=>{
     for(const delegate of ['CPU']){
       if(controller.signal.aborted)throw controller.signal.reason;
-      const candidate=new Worker(new URL('./hand-worker.js?v=49',import.meta.url));
+      const candidate=new Worker(new URL('./hand-worker.js?v=50',import.meta.url));
       worker=candidate;
       try{
         await prepareTracker(candidate,controller.signal,delegate);

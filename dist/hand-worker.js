@@ -2,7 +2,7 @@ let tracker;
 let delegate;
 async function initialize(candidate='CPU') {
   const { cachedAsset } = await import('./asset-cache.js?v=46');
-  const { FilesetResolver, HandLandmarker } = await import('./vendor/vision_bundle.mjs?v=49');
+  const { FilesetResolver, HandLandmarker } = await import('./vendor/vision-runtime.js');
   const files = await FilesetResolver.forVisionTasks(new URL('./vendor/wasm', self.location.href).href);
   const [model,wasm]=await Promise.all([
     cachedAsset(new URL('./vendor/hand_landmarker.task',self.location.href)).then(r=>r.arrayBuffer()),

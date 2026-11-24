@@ -33,7 +33,7 @@ document.addEventListener('click',e=>{if(!menu.contains(e.target))menu.open=fals
 document.addEventListener('keydown',e=>{if(e.key==='Escape'&&menu.open){menu.open=false;menu.querySelector('summary').focus();}});
 menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>menu.open=false));
 
-import './home-gesture.js?v=49';
+import './home-gesture.js?v=50';
 
 // A hovered/focused flower card hints the next destination; cache its original
 // HD sequence so entering the exhibition can reuse the download.
